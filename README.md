@@ -12,7 +12,7 @@ Browser for web API implementing [JSON:API v1.0](https://jsonapi.org/).
 
 ## Demo
 
-[https://masterT.github.com/jsonapi-browser](https://masterT.github.com/jsonapi-browser)
+[https://masterT.github.io/jsonapi-browser](https://masterT.github.io/jsonapi-browser)
 
 ![screenshot.png](.github/assets/screenshot.png)
 
