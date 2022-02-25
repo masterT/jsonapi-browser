@@ -12,7 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "jsonapi-metal-client": "^0.0.1",
+    "jsonapi-metal-client": "^0.1.0",
     "vue": "^3.2.25",
     "vue-router": "4"
   },

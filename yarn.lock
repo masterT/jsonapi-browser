@@ -1056,10 +1056,10 @@ json5@^2.1.2:
   dependencies:
     minimist "^1.2.5"
 
-jsonapi-metal-client@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/jsonapi-metal-client/-/jsonapi-metal-client-0.0.1.tgz#4bd49d746b2ca0a7347a33a41d2419008c12d3ee"
-  integrity sha512-k3YB8o2hClZQjLV8XC0Ikgp/L0fQYdw5mY+btQAJ5vErahOj5Icl3FmuLicDJVwtgIJGaUdyVHcTteqHlReF7A==
+jsonapi-metal-client@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/jsonapi-metal-client/-/jsonapi-metal-client-0.1.0.tgz#ce6d20288dee2737422a399cff67724879dff369"
+  integrity sha512-PnW1Ih27TIhOMtbrsEh5ut878xAEm+6nWD8piNI+IpkSgz9fl5AVqu0V9u58ZhbCsNMC+Q4gETO+kO8rDapScA==
 
 jsonc-parser@^2.3.0:
   version "2.3.1"
