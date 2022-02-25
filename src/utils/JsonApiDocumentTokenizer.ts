@@ -66,7 +66,8 @@ export const renderResourceObject = (
   indentation: number
 ): Token[] => {
   return objectMapKeys(resourceObject, space, indentation, {
-    relationships: renderRelationshipsObject
+    relationships: renderRelationshipsObject,
+    links: renderLinksObject
   })
 }
 
