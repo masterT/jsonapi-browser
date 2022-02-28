@@ -29,7 +29,6 @@ export function useJsonApiBrowserHistory(
     window.addEventListener('popstate', onPopState)
     // Handle browser refresh.
     if (isJsonApiBrowserHistoryState(window.history.state)) {
-      console.log('Handle browser refresh')
       onHistoryChange(window.history.state.location)
     }
   })
