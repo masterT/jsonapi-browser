@@ -1,6 +1,6 @@
 {
   "name": "jsonapi-browser",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Browser for web API implementing JSON:API v1.0.",
   "private": true,
   "repository": "https://github.com/masterT/jsonapi-browser",
