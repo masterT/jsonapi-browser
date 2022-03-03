@@ -7,14 +7,14 @@ import TokenValue from './TokenValue.vue'
 
 const Tree: FunctionalComponent<
   { token: JsonTree.Token }
-> = (props, context) => {
+> = (props) => {
   switch (props.token.type) {
     case 'array':
-      return h(TokenArray, mergeProps(props, context.attrs), context.slots)
+      return h(TokenArray, { token: props.token })
     case 'object':
-      return h(TokenObject, mergeProps(props, context.attrs), context.slots)
+      return h(TokenObject, { token: props.token })
       case 'value':
-      return h(TokenValue, mergeProps(props, context.attrs), context.slots)
+      return h(TokenValue, { token: props.token })
     default:
       return
   }
