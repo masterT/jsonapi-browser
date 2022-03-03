@@ -6,7 +6,6 @@ import ClientConfigurationForm from '../components/ClientConfigurationForm.vue'
 import BrowserControls from '../components/BrowserControls.vue'
 import Request from '../components/Request.vue'
 import Response from '../components/Response.vue'
-import JsonApiDocumentRaw from '../components/JsonApiDocument/Raw.vue'
 import JsonApiDocumentTree from '../components/JsonApiDocument/Tree.vue'
 import JsonApiDocumentDescription from '../components/JsonApiDocument/Description'
 import { RequestConfiguration } from '../models/RequestConfiguration'
@@ -113,15 +112,6 @@ watch(() => requestConfiguration.value, () => {
                   Document
                 </button>
                 <button
-                  class="p-3 border-b-3 hover:bg-gray-100 font-semibold text-sm py-1"
-                  :class="{
-                    'border-primary-800': tab === 'raw',
-                    'border-transparent': tab !== 'raw'
-                  }"
-                  @click="tab = 'raw'">
-                  Raw
-                </button>
-                <button
                   v-if="request"
                   class="p-3 border-b-3 hover:bg-gray-100 font-semibold text-sm py-1"
                   :class="{
@@ -145,9 +135,6 @@ watch(() => requestConfiguration.value, () => {
               <KeepAlive>
                 <template v-if="tab == 'document'">
                   <JsonApiDocumentTree :document="document" @navigate="onNavigate" v-if="document"/>
-                </template>
-                <template v-else-if="tab == 'raw'">
-                  <JsonApiDocumentRaw :document="document" v-if="document" />
                 </template>
                 <template v-else-if="tab == 'request'">
                   <Request :request="request" v-if="request" />
