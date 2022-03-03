@@ -1,15 +1,20 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { HttpAdapter } from 'jsonapi-metal-client'
 
 const props = defineProps<{ response: HttpAdapter.AdapterResponse }>()
 
-let body = props.response.body
-try {
-  if (body) {
-    body = JSON.stringify(JSON.parse(body), null, 2)
+const body = computed(() => {
+  try {
+    if (props.response.body) {
+      return JSON.stringify(props.response.body, null, 2)
+    } else {
+      return ''
+    }
+  } catch (e) {
+    return ''
   }
-} catch (e) {}
+})
 
 </script>
 
