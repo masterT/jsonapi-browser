@@ -18,7 +18,6 @@ const Description: FunctionalComponent<
           h('b', `${props.document.data.type} #${props.document.data.id}`)
         ])
       }
-      return h('span', description)
     }
 
     // Collection resource.
