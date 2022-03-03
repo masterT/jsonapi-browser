@@ -7,7 +7,7 @@ const props = defineProps<{ response: HttpAdapter.AdapterResponse }>()
 const body = computed(() => {
   try {
     if (props.response.body) {
-      return JSON.stringify(props.response.body, null, 2)
+      return JSON.stringify(JSON.parse(props.response.body), null, 2)
     } else {
       return ''
     }
