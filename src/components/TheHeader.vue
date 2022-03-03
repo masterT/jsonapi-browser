@@ -10,10 +10,10 @@
       <nav>
         <ul class="flex">
           <li class="mr-6 text-lg font-medium">
-            <router-link to="/">Browser</router-link>
+            <router-link class="text-primary-800 hover:text-primary-900 font-semibold" to="/">Browser</router-link>
           </li>
           <li class="mr-6 text-lg font-medium">
-            <router-link to="/about">About</router-link>
+            <router-link class="text-primary-800 hover:text-primary-900 font-semibold" to="/about">About</router-link>
           </li>
         </ul>
       </nav>
