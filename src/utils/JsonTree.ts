@@ -17,7 +17,7 @@ export type TokenObject = {
 export type TokenValue = {
   type: 'value',
   parent?: Token,
-  key?: string | number,
+  key?: string | number | null,
   value: any
 }
 

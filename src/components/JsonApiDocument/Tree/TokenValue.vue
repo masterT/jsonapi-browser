@@ -18,6 +18,8 @@
       return 'number'
     } else if (props.token.value === true || props.token.value === false) {
       return 'boolean'
+    } else if (props.token.value === null) {
+      return 'null'
     } else {
       // JSON:API link
       if (props.token.parent) {
@@ -43,8 +45,10 @@
         return 'text-blue-900';
       case 'boolean':
         return 'text-blue-900';
+      case 'null':
+        return 'text-gray-500';
       case 'link':
-        return 'text-gray-500 underline'
+        return 'text-gray-600 underline'
       case 'string':
       default:
         return 'text-red-700'
@@ -57,6 +61,8 @@
         return props.token.value
       case 'boolean':
         return props.token.value
+      case 'null':
+        return 'null'
       case 'link':
         return props.token.value
       case 'string':
